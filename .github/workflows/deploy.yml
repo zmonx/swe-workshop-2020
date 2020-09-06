@@ -28,5 +28,5 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.4.6
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "mai-ting-gun"
-        heroku_email: "slipknot.opal@gmail.com"
+        heroku_app_name: "swe-testing-training-2020"
+        heroku_email: "chumpitak@gmail.com"
