@@ -13,9 +13,6 @@ class TestUtility(unittest.TestCase):
     def test_validate_name_with_invalid_input_contain_string_of_int(self):
         self.assertEqual(False, validate_name("aaa122"))
 
-    # def test_validate_name_with_invalid_input_lang_thai(self):
-    #     self.assertEqual(False, validate_name("กกกกกก"))
-
     def test_validate_name_with_invalid_input_special_char(self):
         self.assertEqual(False, validate_name("ff_**"))
 
@@ -27,6 +24,12 @@ class TestUtility(unittest.TestCase):
 
     def test_validate_name_with_invalid_input_empty_string(self):
         self.assertEqual(False, validate_name(" "))
+
+    def test_validate_id_len13(self):
+        self.assertEqual(True, validate_name("1929900744144"))
+
+    def test_validate_id_len12(self):
+        self.assertEqual(False, validate_name("192990074414"))
 
 
 if __name__ == '__main__':

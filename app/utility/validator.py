@@ -16,6 +16,10 @@ def validate_name(name):
 
 
 def validate_id(id):
+    if len(id) == 13:
+        return True
+    else:
+        return False
     return True
 
 
